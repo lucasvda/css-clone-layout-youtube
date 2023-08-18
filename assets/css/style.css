@@ -1,0 +1,105 @@
+@import url("/assets/css/reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  margin: auto;
+  max-width: 1440px;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+.flex-conteiner-menu {
+  display: flex;
+  height: 56px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+}
+.flex-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.haburguer-menu {
+  margin-left: 24px;
+}
+.youtube-logo {
+  width: 90px;
+  height: 20px;
+  margin-left: 8px;
+}
+.input-search {
+  width: 348px;
+  height: 36px;
+  border: 0px;
+  border: 2px solid #cccccc;
+}
+.position {
+  position: relative;
+}
+.label-search {
+  position: absolute;
+  right: -46px;
+  border: 2px solid #cccccc;
+  padding: 6px 10px;
+}
+
+.profile {
+  margin-right: 24px;
+  width: 34px;
+  border-radius: 50%;
+}
+main {
+  max-width: 952px;
+}
+.flex-conteiner-main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.flex-conteiner-main-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 0.87rem;
+  font-weight: 500;
+  display: inline-block;
+}
+p {
+  font-size: 0.87rem;
+  font-weight: 400;
+  max-width: 510px;
+  color: #515151;
+}
+.button {
+  padding: 15px 30px;
+  background-color: #CC0000;
+  border-radius: 2px;
+  color: #FFFFFF;
+
+}
+.options {
+  margin-left: 8px;
+}
+.channel-name {
+  display: inline-block;
+  margin-left: 12px;
+}
+@media (max-width: 850px) {
+  .label-search {
+    display: none;
+  }
+  .input-search {
+    display: none;
+  }
+}
+@media (max-width: 350px) {
+  .youtube-logo {
+    display: none;
+  }
+}
