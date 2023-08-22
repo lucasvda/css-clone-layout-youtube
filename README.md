@@ -1,1 +1,1 @@
-# trilha-css-desafio-02
+# Desafio 02 - Reescrever o layout do Youtube
