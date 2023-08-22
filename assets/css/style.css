@@ -42,7 +42,6 @@ body {
   border: 2px solid #cccccc;
   padding: 6px 10px;
 }
-
 .profile {
   margin-right: 24px;
   width: 34px;
@@ -50,6 +49,8 @@ body {
 }
 main {
   max-width: 952px;
+  margin-left: 75px;
+  margin-top: 28px;
 }
 .flex-conteiner-main {
   display: flex;
@@ -58,8 +59,29 @@ main {
 }
 .flex-conteiner-main-options {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+.flex-items-conteiner-main {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.resp-conteiner {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+.resp-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 h1 {
   font-size: 1.25rem;
@@ -78,18 +100,66 @@ p {
 }
 .button {
   padding: 15px 30px;
-  background-color: #CC0000;
+  background-color: #cc0000;
   border-radius: 2px;
-  color: #FFFFFF;
-
+  color: #ffffff;
+  white-space: nowrap;
 }
-.options {
-  margin-left: 8px;
+.icon-options {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  margin-left: 42px;
 }
 .channel-name {
-  display: inline-block;
-  margin-left: 12px;
+  margin-left: 4px;
 }
+.channel-logo {
+  max-width: 42px;
+}
+aside {
+  max-width: 356px;
+  margin-top: 28px;
+}
+.flex-conteiner-content {
+  display: flex;
+  gap: 25px;
+  justify-content: space-around;
+}
+.flex-side-bar-conteiner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.flex-side-bar-conteiner li {
+  max-height: 90px;
+}
+.flex-item-side-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.div-imagem {
+  width: 160px;
+  text-align: center;
+}
+.thumbs {
+  max-width: 100%;
+  display: inline-block;
+}
+.flex-item-side-bar h2 {
+  font-size: 0.87rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.flex-item-side-bar p {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #515151;
+  margin-bottom: 8px;
+}
+
+/* Reponsividade do Menu */
 @media (max-width: 850px) {
   .label-search {
     display: none;
@@ -101,5 +171,37 @@ p {
 @media (max-width: 350px) {
   .youtube-logo {
     display: none;
+  }
+}
+/* Reponsividade Main */
+@media (max-width: 875px) {
+  .flex-conteiner-main-options {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px 42px;
+  }
+}
+@media (max-width: 875px) {
+  .flex-items-conteiner-main {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 560px) {
+  .options {
+    display: none;
+  }
+}
+@media (max-width: 360px) {
+  .flex-conteiner-main-options {
+    gap: 36px;
+  }
+}
+/* Responsividade da Side Bar */
+@media (max-width: 1345px) {
+  aside {
+    display: none;
+  }
+  main {
+    margin: 28px auto;
   }
 }
